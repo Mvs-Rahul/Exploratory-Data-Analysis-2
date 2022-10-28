@@ -21,7 +21,6 @@ bothNEI <- rbind(vehiclesBaltimoreNEI,vehiclesLANEI)
 
 png("plot6.png")
 
-
 ggplot(bothNEI, aes(x=factor(year), y=Emissions, fill=city)) +
   geom_bar(aes(fill=year),stat="identity") +
   facet_grid(scales="free", space="free", .~city) +
